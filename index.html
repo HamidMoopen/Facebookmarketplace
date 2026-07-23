@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Party Rentals &middot; Near UT Dallas</title>
+<meta name="description" content="Cotton candy machine, canopy tent, arcade basketball, giant lawn games and cornhole for rent near UT Dallas. Pickup or delivery for an extra charge.">
+<meta property="og:title" content="Party Rentals &middot; Near UT Dallas">
+<meta property="og:description" content="Cotton candy machine, canopy tent, arcade basketball, giant lawn games and cornhole for rent. Pickup near UT Dallas, delivery in DFW for an extra charge.">
+<meta property="og:image" content="a1.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FCFAF6;--beige:#F1EAE0;--beige-deep:#E6DCCC;--line:#DCD2C2;--ink:#26221D;--muted:#8A8073}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Karla",system-ui,sans-serif;font-size:17px;line-height:1.65}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+img{display:block}
+a{color:inherit}
+
+header{padding:clamp(44px,9vw,84px) 0 0}
+.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:500}
+h1{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(2.4rem,7.4vw,4.3rem);line-height:1.02;letter-spacing:-.022em;margin:.22em 0 .22em}
+.lede{font-family:"Fraunces",Georgia,serif;font-size:clamp(1.1rem,2.4vw,1.3rem);line-height:1.5;max-width:48ch;color:var(--muted);margin:0}
+.terms-chips{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 0;padding:0;list-style:none}
+.terms-chips li{font-family:"Roboto Mono",monospace;font-size:12px;background:var(--beige);border-radius:3px;padding:7px 13px}
+
+nav{margin:34px 0 0;padding:22px 0 0;border-top:1px solid var(--line)}
+nav p{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 12px;font-weight:500}
+nav ul{display:flex;flex-wrap:wrap;gap:7px;margin:0;padding:0;list-style:none}
+nav a{display:inline-block;text-decoration:none;font-size:14.5px;background:var(--beige);border-radius:3px;padding:8px 15px;transition:background .18s}
+nav a:hover{background:var(--beige-deep)}
+
+.item{padding:clamp(52px,8vw,84px) 0;border-bottom:1px solid var(--line);scroll-margin-top:20px}
+.item:last-of-type{border-bottom:0}
+h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(1.9rem,5vw,2.7rem);line-height:1.06;letter-spacing:-.02em;margin:0 0 .12em}
+.sub{color:var(--muted);margin:0 0 20px;font-size:15.5px}
+.rates{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 14px;margin:0 0 28px;font-family:"Fraunces",Georgia,serif;font-size:1.22rem}
+.rates i{font-style:normal;color:var(--line)}
+.rates em{font-style:normal;color:var(--muted);font-family:"Karla",sans-serif;font-size:.85rem}
+
+.stage{width:100%;aspect-ratio:4/3;overflow:hidden;background:var(--beige);border-radius:5px;box-shadow:0 22px 48px -28px rgba(38,34,29,.42)}
+.stage img{width:100%;height:100%;object-fit:cover}
+.thumbs{display:flex;gap:10px;margin-top:12px;overflow-x:auto;padding-bottom:6px}
+.thumbs button{flex:0 0 92px;height:70px;padding:0;border:0;border-radius:4px;overflow:hidden;background:var(--beige);cursor:pointer;opacity:.5;transition:opacity .22s,box-shadow .22s}
+.thumbs button:hover{opacity:.85}
+.thumbs button[aria-current="true"]{opacity:1;box-shadow:0 0 0 2px var(--ink)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+
+.cols{display:grid;grid-template-columns:1fr;gap:34px;padding-top:38px}
+@media(min-width:840px){.cols{grid-template-columns:1.4fr 1fr;gap:60px;align-items:start}}
+.pitch p{margin:0 0 1.12em;max-width:57ch}
+.pitch p:first-child{font-family:"Fraunces",Georgia,serif;font-size:1.18rem;line-height:1.5}
+.incl{margin:30px 0 0}
+.incl h3{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 12px}
+.incl ul{margin:0;padding:0;list-style:none}
+.incl li{position:relative;padding:0 0 0 22px;margin-bottom:7px;max-width:52ch}
+.incl li::before{content:"";position:absolute;left:2px;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--beige-deep)}
+
+.ledger{background:var(--beige);border-radius:5px;padding:26px 24px 20px}
+.ledger h3{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 4px}
+.ledger dl{margin:0;font-family:"Roboto Mono",monospace;font-size:12.5px}
+.ledger div{display:flex;align-items:baseline;gap:8px;padding:10px 0;border-bottom:1px solid var(--beige-deep)}
+.ledger div:last-child{border-bottom:0;padding-bottom:3px}
+.ledger dt{white-space:nowrap;color:var(--muted)}
+.ledger .dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-3px)}
+.ledger dd{margin:0;font-weight:500;text-align:right}
+.addons{margin:18px 0 0;font-family:"Roboto Mono",monospace;font-size:12.5px;color:var(--muted)}
+.addons b{color:var(--ink);font-weight:500}
+
+.btn{display:inline-block;background:var(--ink);color:var(--paper);font-weight:700;padding:15px 32px;border-radius:3px;text-decoration:none;margin-top:28px;transition:transform .2s,opacity .2s}
+.btn:hover{transform:translateY(-2px);opacity:.9}
+
+.how{background:var(--beige);border-radius:5px;padding:clamp(34px,5vw,48px) clamp(24px,4vw,42px);margin:clamp(48px,7vw,72px) 0 0}
+.how h2{font-size:clamp(1.5rem,3.2vw,2rem);margin-bottom:.5em}
+.how ol{margin:0;padding-left:1.15em}
+.how li{margin-bottom:.7em;max-width:60ch}
+.how li:last-child{margin-bottom:0}
+footer{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);text-align:center;padding:56px 0 44px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Near UT Dallas &middot; Pickup or delivery</p>
+  <h1>Party rentals</h1>
+  <p class="lede">Cotton candy, canopies and giant lawn games for backyard parties, graduations, weddings and corporate days across DFW.</p>
+  <ul class="terms-chips">
+    <li>Pickup near UT Dallas</li>
+    <li>Delivery for an extra charge</li>
+    <li>Deposit refunded on drop-off</li>
+  </ul>
+  <nav>
+    <p>Jump to</p>
+    <ul>
+      <li><a href="#cotton-candy">Cotton Candy Machine</a></li>
+      <li><a href="#canopy-tent">10×10 Pop-Up Canopy Tent</a></li>
+      <li><a href="#arcade-basketball">Arcade Basketball Game</a></li>
+      <li><a href="#tumbling-tower">Giant Tumbling Tower</a></li>
+      <li><a href="#connect-4">Giant Connect 4</a></li>
+      <li><a href="#cornhole">Cornhole Board Set</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- ══════════════ ITEM 1 — COTTON CANDY MACHINE ══════════════ -->
+<section class="item" id="cotton-candy">
+
+  <h2>Cotton Candy Machine</h2>
+  <p class="sub">Blue commercial machine · all supplies included</p>
+  <p class="rates"><span>$80 / 24 hours</span> <i>&middot;</i> <em>$160 weekend (Fri–Sun)</em> <i>&middot;</i> <em>$75 deposit</em></p>
+
+  <div class="stage"><img src="a1.jpg" alt="Cotton Candy Machine"></div>
+  <div class="thumbs">
+    <button aria-current="true"><img src="a1.jpg" alt="Photo 1"></button>
+    <button><img src="a2.jpg" alt="Photo 2"></button>
+  </div>
+
+  <div class="cols">
+    <div class="pitch">
+      <p>Turns any party into a carnival. A commercial-style blue cotton candy machine that arrives ready to plug in and spin — no assembly, no learning curve.</p>
+      <p>Everything you need comes with it, including the sugar and the cones. Pick two floss flavours when you book: pink vanilla, blue raspberry, grape, cherry, or banana.</p>
+      <div class="incl">
+        <h3>What is included</h3>
+        <ul>
+          <li>Blue commercial cotton candy machine</li>
+          <li>Stainless steel bowl and sugar scoop</li>
+          <li>2 flavours of floss sugar, your choice</li>
+          <li>60 paper cones</li>
+          <li>Heavy-duty extension cord</li>
+          <li>Folding table with cover, if you need one</li>
+          <li>Quick-start instructions</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="ledger">
+      <h3>Rental terms</h3>
+      <dl>
+        <div><dt>24-hour rate</dt><i class="dots"></i><dd>$80</dd></div>
+        <div><dt>Weekend, Fri–Sun</dt><i class="dots"></i><dd>$160</dd></div>
+        <div><dt>Deposit</dt><i class="dots"></i><dd>$75 refundable</dd></div>
+        <div><dt>Condition</dt><i class="dots"></i><dd>Used, like new</dd></div>
+        <div><dt>Pickup</dt><i class="dots"></i><dd>Near UT Dallas</dd></div>
+        <div><dt>Delivery</dt><i class="dots"></i><dd>Extra charge</dd></div>
+        <div><dt>Deposit back</dt><i class="dots"></i><dd>After clean drop-off</dd></div>
+      </dl>
+      <p class="addons">Add-ons: Extra flavour <b>+$10</b> &middot; Extra 60 cones <b>+$15</b></p>
+    </aside>
+  </div>
+
+  <a class="btn" href="https://www.facebook.com/marketplace/item/1042158951607522/">Message on Marketplace</a>
+</section>
+
+
+<!-- ══════════════ ITEM 2 — 10×10 POP-UP CANOPY TENT ══════════════ -->
+<section class="item" id="canopy-tent">
+
+  <h2>10×10 Pop-Up Canopy Tent</h2>
+  <p class="sub">White canopy · steel frame</p>
+  <p class="rates"><span>$15 / day</span> <i>&middot;</i> <em>$30 weekend (Fri–Sun)</em> <i>&middot;</i> <em>$50 deposit</em></p>
+
+  <div class="stage"><img src="b1.jpg" alt="10×10 Pop-Up Canopy Tent"></div>
+  <div class="thumbs">
+    <button aria-current="true"><img src="b1.jpg" alt="Photo 1"></button>
+    <button><img src="b2.jpg" alt="Photo 2"></button>
+  </div>
+
+  <div class="cols">
+    <div class="pitch">
+      <p>Shade and cover for a backyard BBQ, graduation party, wedding, market booth, tailgate or corporate event.</p>
+      <p>Clean white top on a durable steel frame. Quick to put up, looks professional, and keeps guests, food, tables or party games out of the sun.</p>
+      <div class="incl">
+        <h3>What is included</h3>
+        <ul>
+          <li>10×10 white pop-up canopy tent</li>
+          <li>Durable steel frame</li>
+          <li>White canopy top</li>
+          <li>Stakes and ropes for setup</li>
+          <li>Carry bag for transport</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="ledger">
+      <h3>Rental terms</h3>
+      <dl>
+        <div><dt>Daily rate</dt><i class="dots"></i><dd>$15</dd></div>
+        <div><dt>Weekend, Fri–Sun</dt><i class="dots"></i><dd>$30</dd></div>
+        <div><dt>Deposit</dt><i class="dots"></i><dd>$50 refundable</dd></div>
+        <div><dt>Condition</dt><i class="dots"></i><dd>Used, like new</dd></div>
+        <div><dt>Pickup</dt><i class="dots"></i><dd>Near UT Dallas</dd></div>
+        <div><dt>Delivery</dt><i class="dots"></i><dd>Extra charge</dd></div>
+        <div><dt>Deposit back</dt><i class="dots"></i><dd>After safe drop-off</dd></div>
+      </dl>
+    </aside>
+  </div>
+
+  <a class="btn" href="https://www.facebook.com/marketplace/item/1010722218415715/">Message on Marketplace</a>
+</section>
+
+
+<!-- ══════════════ ITEM 3 — ARCADE BASKETBALL GAME ══════════════ -->
+<section class="item" id="arcade-basketball">
+
+  <h2>Arcade Basketball Game</h2>
+  <p class="sub">Red and blue pop-up · two hoops</p>
+  <p class="rates"><span>$25 / day</span> <i>&middot;</i> <em>$50 weekend (Fri–Sun)</em> <i>&middot;</i> <em>$50 deposit</em></p>
+
+  <div class="stage"><img src="c1.jpg" alt="Arcade Basketball Game"></div>
+  <div class="thumbs">
+    <button aria-current="true"><img src="c1.jpg" alt="Photo 1"></button>
+    <button><img src="c2.jpg" alt="Photo 2"></button>
+  </div>
+
+  <div class="cols">
+    <div class="pitch">
+      <p>A two-hoop pop-up arcade game that gets a queue going at any party. Competitive enough for adults, easy enough for kids.</p>
+      <p>Folds down flat, sets up in minutes, and works indoors or out. Good for backyard BBQs, graduations, birthdays, school events and corporate days.</p>
+      <div class="incl">
+        <h3>What is included</h3>
+        <ul>
+          <li>Red and blue arcade basketball game</li>
+          <li>4 mini basketballs</li>
+          <li>Foldable frame</li>
+          <li>Basketball return ramp</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="ledger">
+      <h3>Rental terms</h3>
+      <dl>
+        <div><dt>Daily rate</dt><i class="dots"></i><dd>$25</dd></div>
+        <div><dt>Weekend, Fri–Sun</dt><i class="dots"></i><dd>$50</dd></div>
+        <div><dt>Deposit</dt><i class="dots"></i><dd>$50 refundable</dd></div>
+        <div><dt>Condition</dt><i class="dots"></i><dd>Used, like new</dd></div>
+        <div><dt>Pickup</dt><i class="dots"></i><dd>Near UT Dallas</dd></div>
+        <div><dt>Delivery</dt><i class="dots"></i><dd>Extra charge</dd></div>
+        <div><dt>Deposit back</dt><i class="dots"></i><dd>After safe drop-off</dd></div>
+      </dl>
+    </aside>
+  </div>
+
+  <a class="btn" href="https://www.facebook.com/marketplace/item/2220886628699941/">Message on Marketplace</a>
+</section>
+
+
+<!-- ══════════════ ITEM 4 — GIANT TUMBLING TOWER ══════════════ -->
+<section class="item" id="tumbling-tower">
+
+  <h2>Giant Tumbling Tower</h2>
+  <p class="sub">Brown stained finish · 54 blocks</p>
+  <p class="rates"><span>$25 / day</span> <i>&middot;</i> <em>$50 weekend (Fri–Sun)</em> <i>&middot;</i> <em>$50 deposit</em></p>
+
+  <div class="stage"><img src="d1.jpg" alt="Giant Tumbling Tower"></div>
+  <div class="thumbs">
+    <button aria-current="true"><img src="d1.jpg" alt="Photo 1"></button>
+    <button><img src="d2.jpg" alt="Photo 2"></button>
+  </div>
+
+  <div class="cols">
+    <div class="pitch">
+      <p>The giant version of the block-stacking game, built from premium pine with a clean brown stain.</p>
+      <p>Stands waist-high once assembled and draws a crowd on its own. Simple to set up, and it plays just as well on grass as on a patio.</p>
+      <div class="incl">
+        <h3>What is included</h3>
+        <ul>
+          <li>Giant wooden tumbling tower game</li>
+          <li>54 brown stained wooden blocks</li>
+          <li>Premium pine wood build</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="ledger">
+      <h3>Rental terms</h3>
+      <dl>
+        <div><dt>Daily rate</dt><i class="dots"></i><dd>$25</dd></div>
+        <div><dt>Weekend, Fri–Sun</dt><i class="dots"></i><dd>$50</dd></div>
+        <div><dt>Deposit</dt><i class="dots"></i><dd>$50 refundable</dd></div>
+        <div><dt>Condition</dt><i class="dots"></i><dd>Used, like new</dd></div>
+        <div><dt>Pickup</dt><i class="dots"></i><dd>Near UT Dallas</dd></div>
+        <div><dt>Delivery</dt><i class="dots"></i><dd>Extra charge</dd></div>
+        <div><dt>Deposit back</dt><i class="dots"></i><dd>After safe drop-off</dd></div>
+      </dl>
+    </aside>
+  </div>
+
+  <a class="btn" href="https://www.facebook.com/marketplace/item/2045031696374752/">Message on Marketplace</a>
+</section>
+
+
+<!-- ══════════════ ITEM 5 — GIANT CONNECT 4 ══════════════ -->
+<section class="item" id="connect-4">
+
+  <h2>Giant Connect 4</h2>
+  <p class="sub">Dark wood finish · red and blue discs</p>
+  <p class="rates"><span>$25 / day</span> <i>&middot;</i> <em>$50 weekend (Fri–Sun)</em> <i>&middot;</i> <em>$50 deposit</em></p>
+
+  <div class="stage"><img src="e1.jpg" alt="Giant Connect 4"></div>
+  <div class="thumbs">
+    <button aria-current="true"><img src="e1.jpg" alt="Photo 1"></button>
+    <button><img src="e2.jpg" alt="Photo 2"></button>
+  </div>
+
+  <div class="cols">
+    <div class="pitch">
+      <p>Four-in-a-row at garden scale, in a dark-stained wooden frame that photographs well and holds up outdoors.</p>
+      <p>Free-standing, no assembly beyond dropping it in place, and it keeps kids and adults occupied equally.</p>
+      <div class="incl">
+        <h3>What is included</h3>
+        <ul>
+          <li>Giant wooden Connect 4 game</li>
+          <li>Red and blue playing discs</li>
+          <li>Dark wood stain finish</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="ledger">
+      <h3>Rental terms</h3>
+      <dl>
+        <div><dt>Daily rate</dt><i class="dots"></i><dd>$25</dd></div>
+        <div><dt>Weekend, Fri–Sun</dt><i class="dots"></i><dd>$50</dd></div>
+        <div><dt>Deposit</dt><i class="dots"></i><dd>$50 refundable</dd></div>
+        <div><dt>Condition</dt><i class="dots"></i><dd>Used, like new</dd></div>
+        <div><dt>Pickup</dt><i class="dots"></i><dd>Near UT Dallas</dd></div>
+        <div><dt>Delivery</dt><i class="dots"></i><dd>Extra charge</dd></div>
+        <div><dt>Deposit back</dt><i class="dots"></i><dd>After safe drop-off</dd></div>
+      </dl>
+    </aside>
+  </div>
+
+  <a class="btn" href="https://www.facebook.com/marketplace/item/1296865862237581/">Message on Marketplace</a>
+</section>
+
+
+<!-- ══════════════ ITEM 6 — CORNHOLE BOARD SET ══════════════ -->
+<section class="item" id="cornhole">
+
+  <h2>Cornhole Board Set</h2>
+  <p class="sub">Rustic 3′×2′ tailgate size · carry case</p>
+  <p class="rates"><span>$25 / day</span> <i>&middot;</i> <em>$50 weekend (Fri–Sun)</em> <i>&middot;</i> <em>$50 deposit</em></p>
+
+  <div class="stage"><img src="f1.jpg" alt="Cornhole Board Set"></div>
+  <div class="thumbs">
+    <button aria-current="true"><img src="f1.jpg" alt="Photo 1"></button>
+    <button><img src="f2.jpg" alt="Photo 2"></button>
+    <button><img src="f3.jpg" alt="Photo 3"></button>
+  </div>
+
+  <div class="cols">
+    <div class="pitch">
+      <p>A premium rustic cornhole set in weathered-wood style, with everything needed to play straight out of the bag.</p>
+      <p>Tailgate size at 3 feet by 2 feet, so both boards fit in a trunk or across a back seat. Comes in its own padded carrying case.</p>
+      <div class="incl">
+        <h3>What is included</h3>
+        <ul>
+          <li>2 rustic wooden cornhole boards, 3ft × 2ft</li>
+          <li>8 heavy-duty bean bags, 4 red and 4 blue</li>
+          <li>Premium black carrying case</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="ledger">
+      <h3>Rental terms</h3>
+      <dl>
+        <div><dt>Daily rate</dt><i class="dots"></i><dd>$25</dd></div>
+        <div><dt>Weekend, Fri–Sun</dt><i class="dots"></i><dd>$50</dd></div>
+        <div><dt>Deposit</dt><i class="dots"></i><dd>$50 refundable</dd></div>
+        <div><dt>Condition</dt><i class="dots"></i><dd>Used, like new</dd></div>
+        <div><dt>Pickup</dt><i class="dots"></i><dd>Near UT Dallas</dd></div>
+        <div><dt>Delivery</dt><i class="dots"></i><dd>Extra charge</dd></div>
+        <div><dt>Deposit back</dt><i class="dots"></i><dd>After safe drop-off</dd></div>
+      </dl>
+    </aside>
+  </div>
+
+  <a class="btn" href="https://www.facebook.com/marketplace/item/1631219034610626/">Message on Marketplace</a>
+</section>
+
+
+<section class="how">
+  <h2>How it works</h2>
+  <ol>
+    <li>Message on Marketplace with your event date. Weekend dates go quickly, so earlier is better.</li>
+    <li>Pick up near UT Dallas, or ask about delivery and setup anywhere in DFW for an extra charge based on distance.</li>
+    <li>Pay the rental plus a refundable deposit. The deposit comes straight back on safe drop-off.</li>
+  </ol>
+</section>
+
+<footer>Party rentals &middot; Near UT Dallas &middot; Delivery available across DFW</footer>
+</div>
+
+<script>
+/* Click a thumbnail to make it the big photo.
+   If this ever breaks, the page still works completely. */
+document.querySelectorAll(".item").forEach(function (item) {
+  var stage = item.querySelector(".stage img");
+  item.querySelectorAll(".thumbs button").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      stage.src = btn.querySelector("img").src;
+      item.querySelectorAll(".thumbs button").forEach(function (b) { b.removeAttribute("aria-current"); });
+      btn.setAttribute("aria-current", "true");
+    });
+  });
+});
+</script>
+</body>
+</html>
